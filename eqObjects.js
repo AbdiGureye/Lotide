@@ -17,7 +17,7 @@ const assertEqual = function(actual, expected){
       if(Array.isArray(object1[key]) && Array.isArray(object2[key])) {
         const output= eqArrays(object1[key], object2[key]);
         if(!output) {
-          return false
+          return true
         }
       } else if (object1[key] !== object2[key]){
         return false;
