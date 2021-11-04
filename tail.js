@@ -11,9 +11,9 @@ const tail = function(array) {
   return array.slice(1);
 
 };
-const words = ["One", "two", "three"];
 
 
-assertEqual(tail(words), ["two", "three"]);
+
+
 
 module.exports = tail;
