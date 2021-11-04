@@ -24,7 +24,7 @@ const eqArrays = require(`./eqArrays`);
 
 const middle = function(arr){
   if (arr.length <= 2){
-    return [];
+    return arr;
   }
   else if (arr.length % 2 !== 0){
     const odd = Math.floor(arr.length / 2 )
@@ -40,9 +40,10 @@ const middle = function(arr){
   }
   };
 
-const test = [1, 2, 3, 4] 
-const test1 = [1, 2, 3] 
+// const test = [1, 2, 3, 4] 
+// const test1 = [1, 2, 3] 
 
-
+// assertArraysEqual(middle(test), [2, 3]) // result expected [2, 3]
+// assertArraysEqual(middle(test1), [2]) // result expected [2]
 
 module.exports = middle;
