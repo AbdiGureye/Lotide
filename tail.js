@@ -12,9 +12,8 @@ const tail = function(array) {
 
 };
 const words = ["One", "two", "three"];
-console.log(words.length);
-tail(words);
-console.log(words.length);
-assertEqual(words.length, 3);
 
-module.exports = tail
+
+assertEqual(tail(words), ["two", "three"]);
+
+module.exports = tail;
